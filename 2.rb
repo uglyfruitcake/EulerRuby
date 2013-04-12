@@ -24,4 +24,18 @@ def generate_even_fibonacci(first_seed, second_seed, number_of_terms)
 	return even_fibonacci
 end
 
-generate_even_fibonacci(1, 1, 1).each { |x| puts x}
+sum = 0
+even_fibonacci = generate_even_fibonacci(1, 1, 1)
+even_fibonacci.each { |a| sum += a }
+
+puts "Fibonacci:"
+generate_fibonacci(1,1,1).each {|x| puts x}
+
+puts "Even Fibonacci:"
+even_fibonacci.each { |x| puts x}
+
+puts "Sum of even Fibonacci:"
+puts sum
+
+
+
