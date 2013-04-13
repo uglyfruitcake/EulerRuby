@@ -1,18 +1,13 @@
-def is_multiple_of_x?(n, x)
-	if n % x == 0
-		return true
-	else
-		return false
-	end
-end
+require_relative 'useful_methods'
+include Useful_Methods
 
 sum = 0
 
 for a in 1...1000
-	if is_multiple_of_x?(a, 3)
+	if Useful_Methods.is_multiple_of_x?(a, 3)
 		sum = sum += a
 	elsif
-		is_multiple_of_x?(a, 5)
+		Useful_Methods.is_multiple_of_x?(a, 5)
 		sum = sum +=a
 	end
 end
