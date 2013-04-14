@@ -1,4 +1,6 @@
-require_relative 'useful_methods'
+#! /usr/bin/ruby
+
+require 'useful_methods'
 include Useful_Methods
 
 sum = 0
@@ -8,7 +10,7 @@ for a in 1...1000
 		sum = sum += a
 	elsif
 		Useful_Methods.is_multiple_of_x?(a, 5)
-		sum = sum +=a
+		sum = sum += a
 	end
 end
 

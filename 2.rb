@@ -1,4 +1,6 @@
-require_relative 'useful_methods'
+#! /usr/bin/ruby
+
+require 'useful_methods'
 include Useful_Methods
 
 def generate_fibonacci(first_seed, second_seed, number_of_terms)
