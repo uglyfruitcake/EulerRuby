@@ -4,11 +4,11 @@ require_relative 'useful_methods'
 
 def generate_even_fibonacci(first_seed, second_seed, max_value)
 	even_fibonacci = []
-	Useful_Methods.generate_fibonacci(first_seed, second_seed, max_value).each { |x| 
+	Useful_Methods.generate_fibonacci(first_seed, second_seed, max_value).each do |x| 
 		if Useful_Methods.is_even?(x)
 			even_fibonacci.push(x)
 		end
-	}
+	end
 	return even_fibonacci
 end
 
