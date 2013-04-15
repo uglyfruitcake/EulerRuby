@@ -1,7 +1,6 @@
 #! /usr/bin/ruby
 
 require 'useful_methods'
-include Useful_Methods
 
 sum = 0
 

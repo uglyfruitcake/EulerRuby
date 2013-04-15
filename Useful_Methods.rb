@@ -11,3 +11,5 @@ module Useful_Methods
 		return is_multiple_of_x?(n, 2)
 	end
 end
+
+include Useful_Methods

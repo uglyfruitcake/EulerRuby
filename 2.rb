@@ -1,7 +1,6 @@
 #! /usr/bin/ruby
 
 require_relative 'useful_methods'
-include Useful_Methods
 
 def generate_fibonacci(first_seed, second_seed, max_value)
 	array = [first_seed, second_seed]
@@ -23,16 +22,9 @@ def generate_even_fibonacci(first_seed, second_seed, max_value)
 	return even_fibonacci
 end
 
-
 sum = 0
 even_fibonacci = generate_even_fibonacci(1, 2, 4000000)
 even_fibonacci.each { |a| sum += a }
 
-
-
 puts "Sum of even Fibonacci:"
 puts sum
-
-
-
-
