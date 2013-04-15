@@ -25,10 +25,9 @@ module Useful_Methods
 		for i in 2...number
 			if number % i == 0
 				return false
-			else 
-				return true
 			end
 		end
+		return true
 	end
 	
 end
