@@ -20,6 +20,17 @@ module Useful_Methods
 		end
 		return array
 	end
+
+	def is_prime?(number)
+		for i in 2...number
+			if number % i == 0
+				return false
+			else 
+				return true
+			end
+		end
+	end
+	
 end
 
 include Useful_Methods
