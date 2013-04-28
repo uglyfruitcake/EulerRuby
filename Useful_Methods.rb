@@ -22,7 +22,7 @@ module Useful_Methods
 	end
 
 	def is_prime?(number)
-		for i in 2...number
+		for i in 2...Math.sqrt(number).ceil
 			if number % i == 0
 				return false
 			end
