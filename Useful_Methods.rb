@@ -22,13 +22,26 @@ module Useful_Methods
 	end
 
 	def is_prime?(number)
-		for i in 2...Math.sqrt(number).ceil
-			if number % i == 0
+		for i in 2..Math.sqrt(number).ceil
+			if number == 2
+				return true
+			elsif number % i == 0
 				return false
 			end
 		end
 		return true
 	end
+
+	def generate_primes(ceiling)
+		primes = []
+		for i in 2...ceiling
+			if is_prime?(i)
+				primes.push(i)
+			end
+		end
+		return primes
+	end
+
 	
 end
 
