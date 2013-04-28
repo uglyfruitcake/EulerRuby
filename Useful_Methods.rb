@@ -20,7 +20,7 @@ module Useful_Methods
 		end
 		return array
 	end
-
+	
 	def is_prime?(number)
 		for i in 2..Math.sqrt(number).ceil
 			if number == 2
@@ -34,7 +34,7 @@ module Useful_Methods
 
 	def generate_primes(ceiling)
 		primes = []
-		for i in 2...ceiling
+		for i in 2..ceiling
 			if is_prime?(i)
 				primes.push(i)
 			end
