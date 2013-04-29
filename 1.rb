@@ -1,6 +1,6 @@
 #! /usr/bin/ruby
 
-require 'useful_methods'
+require_relative 'useful_methods'
 
 sum = 0
 
