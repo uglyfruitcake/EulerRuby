@@ -12,10 +12,4 @@ array_of_primes.each do |prime|
 	end
 end
 
-puts factor_primes.max
-
-
-
-
-
-
+puts "The largest prime factor of #{number} is #{factor_primes.max}"
