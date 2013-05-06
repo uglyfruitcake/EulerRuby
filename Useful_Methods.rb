@@ -42,7 +42,13 @@ module Useful_Methods
 		return primes
 	end
 
-	
+	def is_palindrome?(number)
+		if number.to_s == number.to_s.reverse
+			return true
+		end
+		return false
+	end
+
 end
 
 include Useful_Methods
